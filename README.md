@@ -1,3 +1,5 @@
+![Photo by Brett Ritchie on Unsplash](https://user-images.githubusercontent.com/2342458/202707249-359f3a1b-d61c-4d3b-a8b7-7a284f8f9842.png)
+
 # Kinsta - Hello World - Go
 An example of how to set your Go application up to enable deployment on Kinsta App Hosting services.
 
