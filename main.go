@@ -1,9 +1,9 @@
 package main
 
 import (
-    "fmt"
-    "net/http"
-    "os"
+	"os"
+	"github.com/gofiber/fiber/v2"
+	"github.com/gofiber/template/html/v2"
 )
 
 func getEnv(key, fallback string) string {
@@ -14,11 +14,16 @@ func getEnv(key, fallback string) string {
 }
 
 func main() {
-    fmt.Println("Starting application...")
+	engine := html.New("./views", ".html")
 
-    http.HandleFunc("/", func(w http.ResponseWriter, r *http.Request) {
-        fmt.Fprintf(w, "Hello World")
+	app := fiber.New(fiber.Config{
+        Views: engine,
     })
 
-    http.ListenAndServe(":"+getEnv("PORT", "8080"), nil)
+    app.Get("/", func(c *fiber.Ctx) error {
+        // Render index template
+        return c.Render("index", nil)
+    })
+	
+	app.Listen(":"+getEnv("PORT", "8080"))
 }
