@@ -23,5 +23,5 @@ Kinsta automatically sets the `PORT` environment variable. You should **not** de
 ### Start Command
 When deploying an application, Kinsta will automatically create a web process.
 
-## Watch How to Set Up a PHP Application on Kinsta
+## Watch How to Set Up a Go Application on Kinsta
 [![Watch the video](https://img.youtube.com/vi/AftCe2tzILU/maxresdefault.jpg)](https://www.youtube.com/watch?v=AftCe2tzILU)
