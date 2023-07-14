@@ -21,4 +21,7 @@ Kinsta automatically sets the `PORT` environment variable. You should **not** de
 `os.Getenv("PORT")` in your code when referring to the server port.
 
 ### Start Command
-When deploying an application Kinsta will automatically create a web process.
+When deploying an application, Kinsta will automatically create a web process.
+
+## Watch How to Set Up a PHP Application on Kinsta
+[![Watch the video](https://img.youtube.com/vi/AftCe2tzILU/maxresdefault.jpg)](https://www.youtube.com/watch?v=AftCe2tzILU)
